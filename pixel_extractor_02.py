@@ -68,7 +68,7 @@ def find_high_value_pixels(image_file, threshold):
         return coordinates
 
 def process_fits_files_in_directory(directory, threshold):
-    fits_files = glob.glob(os.path.join(directory, '*.fit'))
+    fits_files = glob.glob(os.path.join(directory, nome_immagine))
 
     coordinates_by_file = {}
     abs_values_by_file = {}
